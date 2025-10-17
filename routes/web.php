@@ -21,6 +21,14 @@ Route::get('/test', function() {
 
 
 //  grouped routes
-Route::get('/portfolio/company', function(){
+Route::prefix('/portfolio')->group(function() {
+    Route::get('/company', function(){
+        return view('company');
+    });
     
-})->name('portfolioPage');
+    Route::get('/organization', function(){
+        return view('organization');
+    });
+
+});
+
