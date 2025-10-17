@@ -10,7 +10,9 @@
 </head>
 <body>
     <h1>Home Page</h1>
-    <a href="{{ route('testPage')}}"> Go to test page</a>
-    
+    <form action="/formsubmitted">
+        <!-- <label for=""></label> -->
+         <input type="text" id="fullname" placeholder="Type Your full  name!">
+    </form>
 </body>
 </html>
