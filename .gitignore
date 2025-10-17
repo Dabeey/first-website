@@ -1,0 +1,73 @@
+# Laravel
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/views/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/logs/*
+!/storage/framework/cache/.gitkeep
+!/storage/framework/views/.gitkeep
+!/storage/framework/sessions/.gitkeep
+!/storage/framework/testing/.gitkeep
+!/storage/logs/.gitkeep
+/public/hot
+/public/storage
+/public/build
+/phpunit.xml
+EOF
+
+# Environment files
+.env
+.env.backup
+.env.production
+.env.local
+.env.testing
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# npm
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/package-lock.json
+/yarn.lock
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.zed
+*.swp
+*.swo
+
+# Development tools
+/.phpactor.json
+/.phpunit.cache
+/.phpunit.result.cache
+/coverage
+
+# Local development
+Homestead.json
+Homestead.yaml
+auth.json
+
+# Laravel Sail
+/.env.example
+/docker-compose.override.yml
