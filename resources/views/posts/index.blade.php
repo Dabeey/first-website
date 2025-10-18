@@ -19,6 +19,6 @@
         <p>No posts found!</p>
     @endif
 
-    <a href="{{ route('create')}}">Create New Post</a>
+    <a href="{{ route('posts.create')}}">Create New Post</a>
 </body>
 </html>
