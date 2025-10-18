@@ -9,7 +9,7 @@
     <hr>
     <strong>{{ $post->body }}</strong>
     <p></p>
-    <a href="{{ route('posts.update', $post)}}" class="btn">Edit</a>
+    <a href="{{ route('posts.edit', $post)}}" class="btn">Edit</a>
 
     <form action="{{ route('posts.destroy', $post) }}" method="POST" style="display: inline;">
         @csrf

@@ -14,7 +14,7 @@
         <li>
             <a href="{{ route('posts.show', $post)}}">{{ $post->title }}</a>
             
-            <a href="{{ route('posts.update', $post)}}" class="btn">Edit</a>
+            <a href="{{ route('posts.edit', $post)}}" class="btn">Edit</a>
 
 
             <form action="{{route('posts.destroy', $post)}}" method="post" style="display: inline;">

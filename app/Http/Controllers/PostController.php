@@ -57,7 +57,7 @@ class PostController extends Controller
         ]);
         $post = Post::findOrFail($id);
         $post->update($validated);
-        return redirect()->route('posts.index')->with('success', 'Post created successfully');
+        return redirect()->route('posts.show', $post)->with('success', 'Post created successfully');
     
     }
 

@@ -5,7 +5,7 @@
 @section('content')
     <h1>Update Post</h1>
 
-    <form action="{{ route('posts.update')}}" method="POST">
+    <form action="{{ route('posts.update', $post)}}" method="POST">
         @csrf
         @method('PUT')
         <div>
