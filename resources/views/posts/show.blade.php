@@ -6,7 +6,7 @@
 <h1>{{$post->title}}</h1>
 
 <div>
-    <hr>
+    
     <strong>{{ $post->body }}</strong>
     <p></p>
     <a href="{{ route('posts.edit', $post)}}" class="btn">Edit</a>
@@ -17,12 +17,12 @@
         <button type="submit" class="btn btn-danger" onclick="return confirm('Delete this post?')">Delete</button>
     </form>
     
-    <br><br><hr>
+    <br><br>
     <span>Created at: {{ $post->created_at}}</span>
     <br><br>
 
     <span>Last modified: {{ $post->updated_at}}</span>
-    <br><br><hr>
+    <br><br>
     <a href="{{ route('posts.index')}}">Back To Posts</a>
 
 </div>

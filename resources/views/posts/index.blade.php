@@ -5,8 +5,9 @@
 
 @section('content')
 <h1>All Posts</h1>
+<div id="create">
 <a href="{{ route('posts.create')}}">Create New Post</a>
-
+</div>
 
 @if($posts->count())
     <ul>

@@ -3,6 +3,7 @@
 @section('title', 'Create Post')
 
 @section('content')
+<div class="create_page">
     <h1>Create New Post</h1>
 
     <form action="{{ route('posts.store')}}" method="POST">
@@ -26,5 +27,5 @@
         <button type="submit">Create Post</button>
 
     </form>
-
+</div>
 @endsection    
