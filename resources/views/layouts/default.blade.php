@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'My Laravel Blog App)</title>
+    <title>@yield('title', 'My Laravel Blog App')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -13,11 +13,6 @@
             <!-- Navbar -->
             <a href="{{ route('posts.index')}}">Home</a>
             <a href="{{ route('posts.create')}}">Create</a>
-            <a href="{{ route('posts.show')}}">Show</a>
-            <a href="{{ route('posts.store')}}">Save</a>
-            <a href="{{ route('posts.edit')}}">Edit</a>
-            <a href="{{ route('posts.'update)}}">Update</a>
-            <a href="{{ route('posts.delete')}}">Delete</a>
         </nav>
     </header>
 
